@@ -46,3 +46,9 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
+
+-- Debug
+keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", opts)
+keymap.set("n", "<leader>dpr", function()
+  require("dap-python").test_method()
+end, opts)
