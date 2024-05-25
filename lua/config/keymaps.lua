@@ -2,8 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lapvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-local discipline = require("craftzdog.discipline")
-discipline.cowboy()
+-- local discipline = require("craftzdog.discipline")
+-- discipline.cowboy()
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
@@ -48,7 +48,9 @@ keymap.set("n", "<C-j>", function()
 end, opts)
 
 -- Debug
-keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", opts)
-keymap.set("n", "<leader>dpr", function()
-  require("dap-python").test_method()
-end, opts)
+-- keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", opts)
+-- keymap.set("n", "<leader>dpr", function()
+--   require("dap-python").test_method()
+-- end, opts)
+
+keymap.set("n", "y", '"+y')
