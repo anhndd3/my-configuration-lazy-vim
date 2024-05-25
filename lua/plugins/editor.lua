@@ -204,7 +204,6 @@ return {
       },
     },
   },
-
   {
     "dinhhuy258/git.nvim",
     event = "BufReadPre",
@@ -217,4 +216,13 @@ return {
       },
     },
   },
+  -- {
+  --   "nvim-tree/nvim-tree.lua",
+  --   dependencies = {
+  --     "nvim-tree/nvim-web-devicons",
+  --   },
+  --   opts = {
+  --     view = { relativenumber = true },
+  --   },
+  -- },
 }
